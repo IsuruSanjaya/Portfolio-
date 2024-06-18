@@ -1,419 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
     <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div
+        class="spinner-border text-primary"
+        style="width: 3rem; height: 3rem"
+        role="status"
+      >
+        <span class="sr-only">Loading...</span>
+      </div>
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-primary fw-bold m-0">Isuru</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#Projects" class="nav-item nav-link">Projects</a>
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+      data-wow-delay="0.1s"
+    >
+      <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <h1 class="text-primary fw-bold m-0">Isuru</h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse justify-content-between py-4 py-lg-0"
+        id="navbarCollapse"
+      >
+        <div class="navbar-nav ms-auto py-0">
+          <a href="#home" class="nav-item nav-link active">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#Projects" class="nav-item nav-link">Projects</a>
 
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-            </div>
-            <div class="navbar-nav me-auto py-0">
-                <a href="#experience" class="nav-item nav-link">Experience</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
+          <a href="#skill" class="nav-item nav-link">Skills</a>
         </div>
+        <div class="navbar-nav me-auto py-0">
+          <a href="#experience" class="nav-item nav-link">Experience</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
+      </div>
     </nav>
     <!-- Navbar End -->
 
-
     <!-- Header Start -->
     <div class="container-fluid bg-light my-6 mt-0" id="home">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Isuru sanjaya</h1>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Full stack Developer, Mobile application
-                        development Android</div>
-                </div>
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+            <h3 class="text-primary mb-3">I'm</h3>
+            <h1 class="display-3 mb-3">Isuru sanjaya</h1>
+            <h2 class="typed-text-output d-inline"></h2>
+            <div class="typed-text d-none">
+              Full stack Developer,Mobile application development Android
             </div>
+          </div>
         </div>
-        <!-- Header End -->
+      </div>
+      <!-- Header End -->
 
-
-        <!-- About Start -->
-        <div class="container-xxl py-6" id="about">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <p class="mb-4">Dedicated individual with a performance-driven mindset, poised to
-                            excel in an Associate role. Assisted in development and testing of
-                            mobile and web-based applications. Consistently recognized for
-                            dependability and multi-tasking skills. I have a keen interest in
-                            exploring new technologies and learning how to use new tools. I will
-                            give my fullest contribution to getting the assigned work and tasks
-                            done in time.</p>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
- <!-- Projects Start -->
-    <div class="container-xxl py-6 pt-5" id="experience">
+      <!-- About Start -->
+      <div class="container-xxl py-6" id="about">
         <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">WORK EXPERIENCE
-                    </h1>
-                </div>
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <p class="mb-4">
+                Dedicated individual with a performance-driven mindset, poised
+                to excel in an Associate role. Assisted in development and
+                testing of mobile and web-based applications. Consistently
+                recognized for dependability and multi-tasking skills. I have a
+                keen interest in exploring new technologies and learning how to
+                use new tools. I will give my fullest contribution to getting
+                the assigned work and tasks done in time.
+              </p>
             </div>
-            <div  data-wow-delay="0.1s">
+          </div>
+        </div>
+      </div>
+      <!-- About End -->
+      <!-- Projects Start -->
+      <div class="container-xxl py-6 pt-5" id="experience">
+        <div class="container">
+          <div
+            class="row g-5 mb-5 align-items-center wow fadeInUp"
+            data-wow-delay="0.1s"
+          >
+            <div class="col-lg-6">
+              <h1 class="display-5 mb-0">WORK EXPERIENCE</h1>
+            </div>
+          </div>
+          <div data-wow-delay="0.1s">
+            <h5>STEPHEN INNOVATIONS (PVT) LTD</h5>
+            <h6>Intern Mobile Application Development (Android/6months)</h6>
 
-                <h5>STEPHEN INNOVATIONS (PVT) LTD
+            <h6 class="mb-0">Foreign Mobile Application</h6>
+            <p class="mb-0">
+              <li>Experience in REST APIs Integration and Ul /UX designing</li>
+              <li>
+                Experience in Mobile Programming language Java working with
+                Third-Party libraries.
+              </li>
+              <li>
+                Experience in Chat messaging and version control systems Git
+              </li>
+              <li>
+                Familiarity with agile development methodology ,JIRA and version
+                control systems
+              </li>
+              <li>Fixing bugs in the Application</li>
+              <li>Creating Documentation</li>
+            </p>
+            <h6 class="mb-0">Foreign Mobile Application</h6>
+            <p class="mb-0">
+              <li>Experience in REST APIs Integration and Ul /UX designing</li>
+              <li>
+                Experience in Mobile Programming language Java working with
+                Third-Party libraries.
+              </li>
+              <li>
+                Experience in Chat messaging and version control systems Git.
+              </li>
+              <li>
+                Familiarity with agile development methodology ,JIRA and version
+                control systems
+              </li>
+              <li>Experience in Integrating Web Payment gateway</li>
+              <li>Fixing bugs in the Application</li>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Projects End -->
+      <!-- About Start -->
+      <div class="container-xxl py-2" id="Projects">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="d-flex align-items-center mb-3">
+                <h5 class="border-end pe-3 me-3 mb-0">
+                  Sri Lanka Institute of Information Technology
                 </h5>
-                <h6>Intern Mobile Application Development (Android/6months)
-                </h6>
+              </div>
+              <p class="mb-4">.</p>
+              <div class="d-flex align-items-center mb-3">
+                <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
+                <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">
+                  6
+                </h2>
+              </div>
+              <h6 class="mb-0">
+                Projects are developed using latest technology.
+              </h6>
+              <br />
 
-                <h6 class="mb-0">Foreign Mobile Application</h6>
-                <p class="mb-0">
-                    <li>Experience in REST APIs Integration and Ul /UX designing</li> 
-                    <li>Experience in Mobile Programming language Java working with Third-Party libraries.</li>
-                    <li>Experience in Chat messaging and version control systems Git</li>
-                    <li> Familiarity with agile development methodology ,JIRA and version control systems</li>
-                    <li> Fixing bugs in the Application</li>
-                    <li>Creating Documentation</li>
+              <h6 class="mb-0">SCHOOL RIDE MOBILE APPLICATION</h6>
+              <p class="mb-0">
+                Developed a Mobile application for the drivers and students
+                which help them to manage the work easily such as payment,
+                Details of students.
+              </p>
+              <br />
+              <p class="mb-0">Technologies :Android Studio ,Firebase, Java</p>
+              <br />
 
+              <h6 class="mb-0">OFFLINE BLUTOOTH CHAT MOBILE APPLICATION</h6>
+              <p class="mb-0">
+                A mobile application was developed using Flutter to create a chat application 
+                that communicates via Bluetooth with connected Bluetooth devices.
+              </p>
 
+              <p></p>
+              <p class="mb-0">
+                Technologies :Flutter,Firebase
+              </p>
+              <p></p>
 
-                    
-                </p>
-                <h6 class="mb-0">Foreign Mobile Application</h6>
-                <p class="mb-0">
-                    <li>Experience in REST APIs Integration and Ul /UX designing</li>
-                    <li>Experience in Mobile Programming language Java working
-                        with Third-Party libraries.</li>
-                    <li>Experience in Chat messaging and version control systems
-                        Git.</li>
-                    <li>Familiarity with agile development methodology ,JIRA and
-                        version control systems</li>
-                        <li>Experience in Integrating Web Payment gateway</li>
-                        <li> Fixing bugs in the Application</li>
+              <h6 class="mb-0">CHAT APPLICATION</h6>
+              <p class="mb-0">
+                Mobile Application was developed using android java to perform
+                chat application as user can register to system and chat with
+                registered system users.
+              </p>
 
-               
-                </p>
+              <p></p>
+              <p class="mb-0">
+                Technologies : Android Studio, Firestore, Firebase, Cloud
+                messanging, Java
+              </p>
+              <p></p>
 
+              <h6 class="mb-0">MOBILE SHOP</h6>
+              <p class="mb-0">
+                Developed a web application for mobile shop to maintain the
+                product,accessories and financial reports by using MERN stack
+              </p>
+              <p class="mb-0">
+                Technologies :Reactjs, Nodejs, Express Js,Typescript,MongoDB,
+                Heroku
+              </p>
 
+              <br />
+              <h6 class="mb-0">FOODIES</h6>
+              <p class="mb-0">
+                Foodies is a web Application implemented similar like Instagram
+                .The function base on post story and user profile.
+              </p>
+              <br />
+              <p class="mb-0">
+                Technologies :Reactjs,Spring boot, javascript,MongoDB
+              </p>
+              <br />
+
+              <br />
+              <h6 class="mb-0">HELPING HANDS</h6>
+              <p class="mb-0">
+                Helping Hands is a Web Application implemented in order to
+                provide feasible solutions for Sustainable Development Goal, No
+                Poverty.The main intention of this Web Application is to provide
+                help for the those in need and eventually reduce poverty in the
+                world we live.
+              </p>
+              <br />
+              <p class="mb-0">
+                Technologies :Reactjs,Nodejs, Express Js,javascript,MongoDB
+              </p>
+              <br />
+
+              <br />
+              <h6 class="mb-0">ERP SYSTEM</h6>
+              <p class="mb-0">
+                Developed a ERP system to manage stock,finance,deliver, product,
+                customer.
+              </p>
+              <br />
+              <p class="mb-0">
+                Technologies :Reactjs, Nodejs, Express Js,Typescript,MongoDB,
+                Heroku
+              </p>
+              <br />
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Projects End -->
-        <!-- About Start -->
-        <div class="container-xxl py-2" id="Projects">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="d-flex align-items-center mb-3">
-                            <h5 class="border-end pe-3 me-3 mb-0">Sri Lanka Institute of Information Technology</h5>
-                        </div>
-                        <p class="mb-4">.</p>
-                        <div class="d-flex align-items-center mb-3">
-                            <h5 class="border-end pe-3 me-3 mb-0">Projects Completed</h5>
-                            <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">6</h2>
-                        </div>
-                        <h6 class="mb-0">Projects are developed using latest technology.</h6><br>
+      </div>
 
-                        <h6 class="mb-0">SCHOOL RIDE MOBILE APPLICATION
-                        </h6>
-                        <p class="mb-0">Developed a Mobile application for the drivers and students which help them to
-                            manage the
-                            work easily such as payment, Details of students.</p><br>
-                        <p class="mb-0">Technologies :Android Studio ,Firebase, Java
-                        </p>
-                        <br>
-
-                        <h6 class="mb-0">CHAT APPLICATION
-                        </h6>
-                        <p class="mb-0">Mobile Application was developed using android java to perform chat application
-                            as user can register to system
-                            and chat with registered system users.
-                        <p>
-                        <p class="mb-0">Technologies : Android Studio, Firestore, Firebase, Cloud messanging, Java
-                        <p>
-
-                        <h6 class="mb-0">MOBILE SHOP
-                        </h6>
-                        <p class="mb-0">Developed a web application for mobile shop to maintain the product,accessories
-                            and financial
-                            reports by using MERN stack</p>
-                        <p class="mb-0">Technologies :Reactjs, Nodejs, Express Js,Typescript,MongoDB, Heroku</p>
-
-
-
-                        <br>
-                        <h6 class="mb-0">FOODIES
-                        </h6>
-                        <p class="mb-0">Foodies is a web Application implemented similar like Instagram .The function
-                            base on post story
-                            and user profile.</p><br>
-                        <p class="mb-0">Technologies :Reactjs,Spring boot, javascript,MongoDB
-                        </p>
-                        <br>
-
-                        <br>
-                        <h6 class="mb-0">HELPING HANDS</h6>
-                        <p class="mb-0">Helping Hands is a Web Application implemented in order to provide feasible
-                            solutions for
-                            Sustainable Development Goal, No Poverty.The main intention of this Web Application is to
-                            provide help for the those in need and eventually reduce poverty in the world we live.</p>
-                        <br>
-                        <p class="mb-0">Technologies :Reactjs,Nodejs, Express Js,javascript,MongoDB
-                        </p>
-                        <br>
-
-                        <br>
-                        <h6 class="mb-0">ERP SYSTEM
-                        </h6>
-                        <p class="mb-0">Developed a ERP system to manage stock,finance,deliver, product, customer.
-                        </p><br>
-                        <p class="mb-0">Technologies :Reactjs, Nodejs, Express Js,Typescript,MongoDB, Heroku
-                        </p>
-                        <br>
-
-
-
+      <!-- Expertise Start -->
+      <div class="container-xxl py-6 pb-5" id="skill">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+              <h1 class="display-5 mb-5">Skills</h1>
+              <p class="mb-4">
+                I am mostly interested as a Backend developer and Mobile
+                application development
+              </p>
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">HTML</h6>
+                      <h6 class="font-weight-bold">95%</h6>
                     </div>
-
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-primary"
+                        role="progressbar"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">CSS</h6>
+                      <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-warning"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">PHP</h6>
+                      <h6 class="font-weight-bold">70%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-danger"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">Flutter</h6>
+                      <h6 class="font-weight-bold">70%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-danger"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">Javascript</h6>
+                      <h6 class="font-weight-bold">70%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-danger"
+                        role="progressbar"
+                        aria-valuenow="90"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </div>
-
-
-
-
-        <!-- Expertise Start -->
-        <div class="container-xxl py-6 pb-5" id="skill">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="display-5 mb-5">Skills</h1>
-                        <p class="mb-4">I am mostly interested as a Backend developer and Mobile application development
-                        </p>
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-bold">HTML</h6>
-                                        <h6 class="font-weight-bold">95%</h6>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-bold">CSS</h6>
-                                        <h6 class="font-weight-bold">85%</h6>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-bold">PHP</h6>
-                                        <h6 class="font-weight-bold">70%</h6>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-bold">Flutter</h6>
-                                        <h6 class="font-weight-bold">70%</h6>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-bold">Javascript</h6>
-                                        <h6 class="font-weight-bold">70%</h6>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-bold">TypeScript </h6>
-                                        <h6 class="font-weight-bold">75%</h6>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-bold">ReactJs</h6>
-                                        <h6 class="font-weight-bold">80%</h6>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-
-                                <div class="skill mb-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-bold">Android</h6>
-                                        <h6 class="font-weight-bold">85%</h6>
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85"
-                                            aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                <div class="col-md-6">
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">TypeScript</h6>
+                      <h6 class="font-weight-bold">75%</h6>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-
-                            <li class="nav-item w-50">
-                                <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
-                                    href="#tab-2">Education</button>
-                            </li>
-                        </ul>
-
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row gy-5 gx-4">
-                                <div class="col-sm-6">
-                                    <h5>School</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2012 - 2020</p>
-                                    <h6 class="mb-0">St Anthony's college Kandy
-                                    </h6>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h5>University</h5>
-                                    <hr class="text-primary my-2">
-                                    <p class="text-primary mb-1">2021 - 2024</p>
-                                    <h6 class="mb-0">Sri Lanka Institute of Information Technology (SLIIT) Campus Malabe
-                                        specialized in Information Technology</h6>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-dark"
+                        role="progressbar"
+                        aria-valuenow="95"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
                     </div>
+                  </div>
+
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">ReactJs</h6>
+                      <h6 class="font-weight-bold">80%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
+
+                  <div class="skill mb-4">
+                    <div class="d-flex justify-content-between">
+                      <h6 class="font-weight-bold">Android</h6>
+                      <h6 class="font-weight-bold">85%</h6>
+                    </div>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-info"
+                        role="progressbar"
+                        aria-valuenow="85"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      ></div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+              <ul
+                class="nav nav-pills rounded border border-2 border-primary mb-5"
+              >
+                <li class="nav-item w-50">
+                  <button
+                    class="nav-link w-100 py-3 fs-5"
+                    data-bs-toggle="pill"
+                    href="#tab-2"
+                  >
+                    Education
+                  </button>
+                </li>
+              </ul>
+
+              <div id="tab-2" class="tab-pane fade show p-0">
+                <div class="row gy-5 gx-4">
+                  <div class="col-sm-6">
+                    <h5>School</h5>
+                    <hr class="text-primary my-2" />
+                    <p class="text-primary mb-1">2012 - 2020</p>
+                    <h6 class="mb-0">St Anthony's college Kandy</h6>
+                  </div>
+                  <div class="col-sm-6">
+                    <h5>University</h5>
+                    <hr class="text-primary my-2" />
+                    <p class="text-primary mb-1">2021 - 2024</p>
+                    <h6 class="mb-0">
+                      Sri Lanka Institute of Information Technology (SLIIT)
+                      Campus Malabe specialized in Information Technology
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Expertise End -->
 
-
-   
-
-
-
     <!-- Contact Start -->
     <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Contact</h1>
-                </div>
-
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-
-                    <hr class="w-100">
-                    <p class="mb-2">Mobile Number:</p>
-                    <h3 class="fw-bold">0779460812</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Email:</p>
-                    <h3 class="fw-bold">isurusanjaya980@gmail.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Follow me:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href="www.linkedin.com/in/isuru-sanjaya-843845211"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
+      <div class="container py-5">
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-6">
+            <h1 class="display-5 mb-0">Contact</h1>
+          </div>
         </div>
+        <div class="row g-5">
+          <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <hr class="w-100" />
+            <p class="mb-2">Mobile Number:</p>
+            <h3 class="fw-bold">0779460812</h3>
+            <hr class="w-100" />
+            <p class="mb-2">Email:</p>
+            <h3 class="fw-bold">isurusanjaya980@gmail.com</h3>
+            <hr class="w-100" />
+            <p class="mb-2">Follow me:</p>
+            <div class="d-flex pt-2">
+              <a
+                class="btn btn-square btn-primary me-2"
+                href="www.linkedin.com/in/isuru-sanjaya-843845211"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Contact End -->
-
-
 
     <!-- Copyright Start -->
 
     <!-- Copyright End -->
 
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+      ><i class="bi bi-arrow-up"></i
+    ></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -429,6 +524,5 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
